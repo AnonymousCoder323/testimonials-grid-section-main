@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+
+/* 
+### Primary
+
+Moderate violet: hsl(263, 55%, 52%)
+Very dark grayish blue: hsl(217, 19%, 35%)
+Very dark blackish blue: hsl(219, 29%, 14%)
+White: hsl(0, 0%, 100%)
+
+### Neutral
+
+Light gray: hsl(0, 0%, 81%)
+Light grayish blue: hsl(210, 46%, 95%) */
+
+@theme {
+  --color-violet: #A775F1;
+  --color-moderate-violet: #733fc8;
+  --color-very-dark-grayish-blue: #48556a;
+  --color-very-dark-blackish-blue: #19202d;
+  --color-light-gray: #cfcfcf;
+  --color-light-grayish-blue: #ecf2f8;
+  --font-barlow-semi-condensed: 'Barlow Semi Condensed', 'sans-serif';
+  --box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.2474);
+}
+
+:root {
+  --color-violet: #A775F1;
+  --color-moderate-violet: #733fc8;
+  --color-very-dark-grayish-blue: #48556a;
+  --color-very-dark-blackish-blue: #19202d;
+  --color-light-gray: #cfcfcf;
+  --color-light-grayish-blue: #ecf2f8;
+  --box-shadow-color: rgb(72, 85, 106);
+}

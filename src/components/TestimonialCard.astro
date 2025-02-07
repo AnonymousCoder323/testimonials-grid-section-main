@@ -1,0 +1,33 @@
+---
+interface Props {
+  name: string;
+  testimonialTitle: string;
+  testimonialText: string;
+  class?: string;
+}
+
+const {
+  name,
+  testimonialTitle,
+  testimonialText,
+  class: cssClass,
+} = Astro.props;
+---
+
+<div
+  class={`p-8 pt-[1.625rem] rounded-lg overflow-hidden shadow-(--box-shadow) ${cssClass}`}
+>
+  <header class='flex flex-row gap-[1.0625rem] font-medium'>
+    <!-- Pass Avatar here -->
+    <slot />
+    <p class='leading-none'>
+      {name}
+      <br />
+      <span class='text-[.6875rem] opacity-50'>Verified Graduate</span>
+    </p>
+  </header>
+  <h2 class='mt-[1.125rem] text-xl leading-[1.2] font-semibold'>
+    {testimonialTitle}
+  </h2>
+  <p class='mt-4 leading-[1.38] font-medium opacity-70'>{testimonialText}</p>
+</div>

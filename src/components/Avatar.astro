@@ -1,0 +1,17 @@
+---
+interface Props {
+  imgUrl: string;
+  imgAlt: string;
+  class?: string;
+}
+
+const { imgUrl, imgAlt, class: cssClass } = Astro.props;
+---
+
+<img
+  class={`max-h-7 rounded-full ${cssClass}`}
+  src={imgUrl}
+  alt={imgAlt}
+  width='28'
+  height='28'
+/>
