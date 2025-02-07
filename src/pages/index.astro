@@ -25,11 +25,13 @@ import Avatar from '../components/Avatar.astro';
     </style>
   </head>
   <body
-    class='min-h-screen bg-light-grayish-blue px-6 py-[4.4375rem] font-barlow-semi-condensed text-[.8125rem]'
+    class='min-h-screen bg-light-grayish-blue px-6 py-[4.4375rem] font-barlow-semi-condensed text-[.8125rem] lg:grid lg:place-content-center'
   >
-    <main class='flex flex-col gap-6'>
+    <main
+      class='mx-auto flex max-w-[69.375rem] flex-col gap-6 sm:grid sm:grid-cols-2 lg:grid-cols-4 lg:grid-rows-2 lg:gap-x-[1.875rem]'
+    >
       <TestimonialCard
-        class='bg-moderate-violet bg-[url(/images/bg-pattern-quotation.svg)] bg-[90%_top] bg-no-repeat text-white'
+        class='bg-moderate-violet bg-[url(/images/bg-pattern-quotation.svg)] bg-[90%_top] bg-no-repeat text-white lg:col-start-1 lg:col-end-3'
         name='Daniel Clifford'
         testimonialTitle={`I received a job offer mid-course, and the
       subjects I learned were current, if not more so, in the company I joined. I
@@ -75,7 +77,7 @@ import Avatar from '../components/Avatar.astro';
         />
       </TestimonialCard>
       <TestimonialCard
-        class='bg-very-dark-blackish-blue text-white'
+        class='bg-very-dark-blackish-blue text-white lg:col-start-2 lg:col-end-4'
         name='Patrick Abrams'
         testimonialTitle={`Awesome teaching support from TAs who did
       the bootcamp themselves. Getting guidance from them and learning from their
@@ -93,7 +95,7 @@ import Avatar from '../components/Avatar.astro';
         />
       </TestimonialCard>
       <TestimonialCard
-        class='bg-white text-very-dark-grayish-blue'
+        class='bg-white text-very-dark-grayish-blue lg:col-start-4 lg:col-end-5 lg:row-start-1 lg:row-end-3'
         name='Kira Whittle'
         testimonialTitle={`Such a life-changing experience. Highly recommended!`}
         testimonialText={`“ Before joining the bootcamp, I’ve never written a line of code. I needed
