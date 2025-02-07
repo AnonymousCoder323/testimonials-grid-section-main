@@ -14,7 +14,7 @@ const {
 } = Astro.props;
 ---
 
-<div
+<article
   class={`p-8 pt-[1.625rem] rounded-lg overflow-hidden shadow-(--box-shadow) ${cssClass}`}
 >
   <header class='flex flex-row gap-[1.0625rem] font-medium'>
@@ -29,5 +29,7 @@ const {
   <h1 class='mt-[1.125rem] text-xl leading-[1.2] font-semibold'>
     {testimonialTitle}
   </h1>
-  <p class='mt-4 leading-[1.38] font-medium opacity-70'>{testimonialText}</p>
-</div>
+  <blockquote class='mt-4 leading-[1.38] font-medium opacity-70'>
+    {testimonialText}
+  </blockquote>
+</article>
